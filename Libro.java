@@ -2,11 +2,18 @@ public class Libro{
     private String titulo;
     private String autor; 
     private int paginas;
+    private String noReferencia;
     
-    public Libro(String name,String title, int pag){
+    public String cambiaNumRef(String refe){
+        noReferencia=refe;
+        return noReferencia;
+    }
+    
+    public Libro(String name,String title, int pag, String refe){
         titulo=name;
         autor=title;
         paginas=pag;
+        noReferencia=refe;
     }
      
     public String dimeAutor(){
